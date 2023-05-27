@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap");
+
+.border {
+    &-orange {
+        border: 1px solid #ff7b63;
+    }
+    &-blue {
+        border: 1px solid #69b4ff;
+    }
+    &-pink {
+        border: 1px solid #f29ff2;
+    }
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    &-title {
+        margin: 10px 0px;
+    }
+    &-img {
+        width: 100%;
+        height: auto;
+    }
+    &-btn-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &-btn {
+        background-color: #4169e1;
+        color: #fff;
+        border: 0px;
+        width: fit-content;
+        border-radius: 2px;
+        padding: 2px 5px;
+    }
+}
+
+.login-form {
+    font-family: "Roboto";
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    border: 1px solid #489ce7;
+    border-radius: 5px;
+    padding: 20px;
+    &-title {
+        font-weight: bold;
+        font-size: 18pt;
+        margin: 15px 0px;
+    }
+    &-input {
+        border: 1px solid #dfdfdf;
+        border-radius: 3px;
+        padding: 8px;
+    }
+    &-login-btn {
+        border-radius: 3px;
+        border: 0px;
+        padding: 8px;
+        text-transform: uppercase;
+        color: #fff;
+        background: linear-gradient(
+            90deg,
+            rgba(15, 219, 224, 1) 0%,
+            rgba(122, 112, 237, 1) 47%,
+            rgba(251, 20, 254, 1) 100%
+        );
+    }
+    &-method-text {
+        margin-top: 10px;
+        color: #9caabc;
+        font-size: 11pt;
+    }
+    &-method {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        &-input {
+            border: 1px solid #d4d4d4;
+            border-radius: 3px;
+            padding: 6px 10px;
+            font-weight: bold;
+            width: 45%;
+            text-align: left;
+            background-color: #fff;
+        }
+        .facebook {
+            color: #5c79bb;
+        }
+        .google {
+            color: #df5b50;
+        }
+    }
+    &-footer {
+        font-size: 10pt;
+        margin: 10px 0px;
+        .signup-now-text {
+            color: #8ac7ed;
+        }
+    }
+}
+
+.user-card {
+    font-family: "Roboto";
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    &-avatar {
+        img {
+            width: 115px;
+            border-radius: 50%;
+        }
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #626262;
+        &-title {
+            font-size: 13pt;
+        }
+        &-content {
+            font-size: 9pt;
+            // text-align: justify;
+        }
+        &-more {
+            font-size: 8pt;
+            color: #76c1e8;
+        }
+    }
+}

@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Question1, Question2a, Question2b, Question3, Question3WithClassName, Question3b, Question3c, Question4a, Question4c } from "./components/Bai1";
+import { Question2q1, Question2q1Function } from "./components/Bai2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Question1 />
+      <Question2a />
+      <Question2b />
+      <Question3 />
+      <Question3WithClassName />
+      <Question3b />
+      <Question3c />
+      <br />
+      <Question4a />
+      <br />
+      <Question4c />
+      <br />
+      <div style={{ display: "flex", gap: 10 }}>
+        <Question2q1 />
+        <Question2q1 />
+        <Question2q1 />
+      </div>
+      <br />
+      <div style={{ display: "flex", gap: 10 }}>
+        <Question2q1Function />
+        <Question2q1Function />
+        <Question2q1Function />
+      </div>
+    </>
   );
 }
 
